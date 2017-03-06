@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous">
+ </script>
+ 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+ 	<link href="https://fonts.googleapis.com/css?family=Griffy" rel="stylesheet">
+ 	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Freckle+Face" rel="stylesheet">
+<style>
+body{
+	font-family: 'Pacifico', cursive;
+	max-width: 700px;
+	margin: 0 auto;
+	background: url("http://wallpapercave.com/wp/TREcQCG.jpg");
+	background-size:cover;
+}
+
+h1{
+	font-family: 'Griffy', cursive;
+	font-size: 75px;
+	text-align: center;
+	margin: 20px 0 0 0;
+	color: #792513;
+}
+
+h2{
+	text-align: center;
+	margin: 0 0 10px 0;
+	color: #AA2A0F;
+}
+
+p{
+	text-align: justify;
+	font-family: 'Arima Madurai', cursive;
+	color: rgba(255,255,255,1);
+	background:rgba(0,0,0,1);
+	background:-webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.55));
+	background:-moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.55));
+	line-height: 20px;
+	padding: 5px;
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	height: 30px;
+	transition:height .5s;
+	-webkit-transition: height .5s;
+	-moz-transition: height .5s;
+}
+
+small{
+	opacity: 0;
+}
+
+.show-description p{
+	height: 130px;
+}
+
+.show-description small{
+	opacity: 1;
+}
+
+div{
+	position: relative;
+	height:280px;
+	background-size: cover;
+	margin: 30px 0 0 0;
+	border-radius: 30px;
+}
+
+.jaipur{
+	background: url("http://1.bp.blogspot.com/-o6JtRZCkIjk/U3Q5KaIzdeI/AAAAAAAAjv8/_aBAMFeXong/s1600/jaipur.jpg");
+	background-size: cover;
+}
+
+.udaipur{
+	background: url("http://www.happytrips.com/photo/32610487/The-Oberoi-Udaivilas.jpg");
+	background-size: cover;
+}
+
+.jaisalmer{
+	background: url("http://limradesertcamp.com/Image/2.jpg");
+	background-size: cover;
+}
+
+.besttime{
+	float: right;
+}
+
+.designed{
+	float:right;
+	font-family: comic sans ms;
+}
+
+@media(max-width: 500px){
+	h1{
+		font-size:50px;
+		margin-top:20px;
+		line-height:40px;
+	}
+
+	h2{
+		font-size: 20px;
+		margin:20px 0 30px 0;
+	}
+
+	div{
+		margin: 20px 12px 0 12px;
+	}
+
+	p{
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	small{
+		font-size: 16px;
+	}
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Rajasthan Tourism</h1>
+
+<h2>!!  Padharo Mhare Desh  !!</h2>
+
+<div class="jaipur show-description">
+	<p>
+		<b>Jaipur</b>
+		<span class="besttime">Best time to visit: October to March</span><br/>
+		<small>The capital of the state, Jaipur is also the largest city in the princely state of Rajasthan. It was founded in 1727, by the Kachwaha Rajput Ruler Sawai Jaisingh II, who was the ruler of Amber. Also known by the nickname ‘Pink City of India’ which is due to the distinctive saffron or pink color of the buildings.<br/>
+		Places to visit:</br>
+			City Palace, Hawa Mahal, Amer Fort, Jal Mahal, Albert Hall Museum
+		</small> 
+	</p>
+</div>
+<div class="udaipur show-description">
+	<p>
+		<b>Udaipur</b>
+		<span class="besttime"> Best time to visit: September to March</span><br />
+		<small>While in a few texts, it has been termed as the Venice of the East, the City of Udaipur is known by its common moniker, the city of lakes. The city was the capital of the Sisodiya Rajputs of Mewar and is famous for its palaces that exemplify the finesse of Rajputana Style architecture.<br/>
+		Places to visit:</br>
+			Lake Pichola, City Palace, Lake Fatehsagar, Bagore Ki Haveli, Jagdish Temple
+		</small>
+	</p>
+</div>
+<div class="jaisalmer show-description">
+	<p>
+		<b>Jaisalmer</b>
+		<span class="besttime"> Best time to visit: November to March</span> <br />
+		<small>The aptly named “golden city”, which comes from its view during the day, the city of Jaisalmer lies in the heart of the Thar Desert. The city was founded by Rajput ruler Maharawal Jaisal Singh in 1156 Ad. The city gets its name from the golden sands of the Thar Desert and the same golden colored sandstone used in the city’s architecture.<br/>
+		Places to visit:</br>
+			War Museum, Jaisalmer Fort, Patwaon-Ki-Haveli, Tanot Mata Tmple, Bada Bagh
+		</small>
+	</p>
+</div>
+
+<br/>
+	<input type="query" placeholder="Any Query?">
+	<input type="submit"><br/>
+
+<span class="designed">
+	Designed by: Abhinav Bhargava
+</span>
+<br/>
+
+<script>
+
+$('div').hover(function(){
+	$(this).toggleClass('show-description');
+});
+
+</script>
+
+</body>
+
